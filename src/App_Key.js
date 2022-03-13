@@ -10,7 +10,7 @@ function App_Key() {
     <div className="result">
       
       {weatherData.map(item => (
-        <div className="price">
+        <div className="price" key={item.date}>
           <div className="week">
             <span>{item.date}</span>
           </div>
