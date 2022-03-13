@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {WeatherProvider} from './Context/Context';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <WeatherProvider>
     <App />
-  </React.StrictMode>,
+  </WeatherProvider>,
   document.getElementById('root')
 );
 
